@@ -1,0 +1,13 @@
+# Place files built by Rojo (the game is published from Studio, not stored here)
+*.rbxl
+*.rbxlx
+*.rbxm
+*.rbxmx
+*.rbxl.lock
+*.rbxlx.lock
+sourcemap.json
+
+# OS / editor junk
+.DS_Store
+Thumbs.db
+.vscode/
