@@ -1,6 +1,9 @@
--- Server script. Lives in ServerScriptService > Server > Main in Studio.
+-- Starts Flashlight Tag. Lives in ServerScriptService > Server > Main in Studio.
 
-local ReplicatedStorage = game:GetService("ReplicatedStorage")
-local Hello = require(ReplicatedStorage.Shared.Hello)
+local LightingSetup = require(script.Parent.LightingSetup)
+local MapBuilder = require(script.Parent.MapBuilder)
+local RoundManager = require(script.Parent.RoundManager)
 
-print(Hello.greet("server"))
+LightingSetup.apply()
+local map = MapBuilder.build()
+RoundManager.run(map)

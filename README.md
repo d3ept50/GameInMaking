@@ -1,5 +1,17 @@
 # GameInMaking
 
+**Flashlight Tag**: a dark room full of hiding spots. One player is the seeker and hunts with a flashlight; everyone else hides. Get close to a hider to tag them. The seeker wins if everyone is found before time runs out.
+
+Settings (round times, tag distance, flashlight strength, how dark it is) are in `src/shared/Config.luau`.
+
+To test alone in Studio: **Test** tab > **Clients and Servers** > 2 players > **Start**.
+
+## Using your own map
+
+The game builds a default lobby and arena when it starts. To use one you built in Studio, add a Model in Workspace named `Arena` with a `HiderSpawns` folder of parts and a part named `SeekerSpawn`, and/or a Model named `Lobby` with a SpawnLocation named `LobbySpawn`.
+
+## About the code
+
 A Roblox game. Code lives in `src/` and is synced into Roblox Studio with [Rojo](https://rojo.space).
 
 ## Where things go
